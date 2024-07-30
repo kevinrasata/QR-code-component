@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: var(--color-slate-300);
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 320px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  padding: 16px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code {
+  width: 288px;
+  height: 288px;
+}
+
+.qr-code img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-content {
+  display: flex;
+  margin: 24px 0 40px;
+  padding: 0px 16px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text-content .improve {
+  color: var(--color-slate-900);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.text-content .scan {
+  color: var(--color-slate-500);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
